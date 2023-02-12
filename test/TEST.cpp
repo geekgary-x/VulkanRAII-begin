@@ -1,8 +1,6 @@
 #include <gtest/gtest.h>
-
-#include <Core/test.h>
-
-TEST(ExampleTest, SimpleFirstTest)
+#include "RAII-tests/Index.h"
+TEST(VulkanRAII, InitInstance)
 {
-	EXPECT_TRUE(test());
+	EXPECT_NO_THROW(RAII::InitInstance());
 }

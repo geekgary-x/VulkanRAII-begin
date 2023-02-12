@@ -1,6 +1,6 @@
 set(TARGET_NAME ${PROJECT_NAME}Runtime)
 
-file(GLOB_RECURSE HEADER_FILES "*.h")
+file(GLOB_RECURSE HEADER_FILES "*.h" "*.hpp")
 file(GLOB_RECURSE SOURCE_FILES "*.cpp")
 
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${HEADER_FILES} ${SOURCE_FILES})
@@ -17,6 +17,7 @@ target_compile_options(${TARGET_NAME} PUBLIC "$<$<COMPILE_LANG_AND_ID:CXX,MSVC>:
 # Link dependencies    
 target_link_libraries(${TARGET_NAME} PUBLIC
 Vulkan::Vulkan
+glfw
           )
 
 target_include_directories(
