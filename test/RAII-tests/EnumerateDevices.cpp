@@ -5,7 +5,7 @@ namespace RAII
     static std::string AppName = "01_InitInstanceRAII";
     static std::string EngineName = "Vulkan.hpp";
 
-    int InitInstance()
+    int EnumerateDevices()
     {
         /* VULKAN_HPP_KEY_START */
         try

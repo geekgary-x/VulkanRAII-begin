@@ -4,3 +4,8 @@ namespace RAII
 {
 	int InitInstance();
 }
+
+namespace RAII
+{
+	int EnumerateDevices();
+}

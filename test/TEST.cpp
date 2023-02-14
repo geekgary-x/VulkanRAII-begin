@@ -4,3 +4,8 @@ TEST(VulkanRAII, InitInstance)
 {
 	EXPECT_NO_THROW(RAII::InitInstance());
 }
+
+TEST(VulkanRAII, EnumerateDevices)
+{
+	EXPECT_NO_THROW(RAII::EnumerateDevices());
+}
