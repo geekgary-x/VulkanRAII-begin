@@ -9,3 +9,8 @@ namespace RAII
 {
 	int EnumerateDevices();
 }
+
+namespace RAII
+{
+	int InitDevice();
+}

@@ -9,3 +9,8 @@ TEST(VulkanRAII, EnumerateDevices)
 {
 	EXPECT_NO_THROW(RAII::EnumerateDevices());
 }
+
+TEST(VulkanRAII, InitDevice)
+{
+	EXPECT_NO_THROW(RAII::InitDevice());
+}
